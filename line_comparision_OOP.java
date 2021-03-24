@@ -1,4 +1,4 @@
-public class line_comparision_UC_3 {
+public class line_comparision_OOP {
 
     public static class line_length_generator {
         // Declaring the points
