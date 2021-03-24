@@ -1,5 +1,4 @@
-public class line_comparision_OOP{
-
+public class line_comparision_UC_2 {
 
     public static class line_length_generator {
         // Declaring the points
@@ -30,11 +29,17 @@ public class line_comparision_OOP{
     
 
 public static void main(String[] args) {
-    // creating a new Instance of class
-    line_length_generator line = new line_length_generator( 5 , 2 , 9, 9 );
-    // Printing the line of the length
-    System.out.println("LENGTH OF THE LINE IS "+line.line_length());
-    
+    // creating two Instance of class
+    line_length_generator line_one = new line_length_generator( 5 , 2 , 9, 9 );
+    line_length_generator line_two = new line_length_generator(6, 7, 10, 12);
+    //Comparing which line is longer
+    if(line_one.line_length() > line_two.line_length()){
+
+        System.out.println("LINE ONE IS THE LONGEST WITH "+line_one.line_length());
+    }
+    else{
+        System.out.println("LINE TWO IS THE LONGEST WITH "+line_two.line_length());
     }
 }
-
+    
+}
