@@ -1,1 +1,45 @@
-//WELCOME
+public class line_comparision_UC_2 {
+
+    public static class line_length_generator {
+        // Declaring the points
+        int x_one;
+        int y_one;
+
+        int x_two;
+        int y_two;
+        
+
+
+        line_length_generator(int x1, int y1, int x2, int y2){
+            // Initializing the points
+            this.x_one = x1;
+            this.y_one = y1;
+            this.x_two = x2;
+            this.y_two = y2;           
+            
+            
+        }
+
+        double line_length(){
+            // Finding the length of the line
+            return Math.sqrt(((x_two - x_one) ^ 2) + (y_two - y_one) ^ 2);
+        }
+    
+    }
+    
+
+public static void main(String[] args) {
+    // creating two Instance of class
+    line_length_generator line_one = new line_length_generator( 5 , 2 , 9, 9 );
+    line_length_generator line_two = new line_length_generator(6, 7, 10, 12);
+    //Comparing which line is longer
+    if(line_one.line_length() > line_two.line_length()){
+
+        System.out.println("LINE ONE IS THE LONGEST WITH "+line_one.line_length());
+    }
+    else{
+        System.out.println("LINE TWO IS THE LONGEST WITH "+line_two.line_length());
+    }
+}
+    
+}
